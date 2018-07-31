@@ -449,45 +449,48 @@ The following are examples of filter expressions:
 ##### Fields #####
 The following fields can be used in filter expressions
 
- Group     | Field     | Meaning                    | Example values
-:----------|:----------|:---------------------------|:-------------------
- sources   | s.id      | Source id                  |
-           | s.bs      | Source base station        |
-           | s.country | Source country             | DNK
-           | s.type    | Source type                | LIVE, SAT 
-           | s.region  | Source region              | 0
- messages  | m.id      | Message type               | 1, 2, 3, 5
-           | m.mmsi    | MMSI number                | 219010123
-           | m.year    | Msg recv'd in year         | 2014
-           | m.month   | Msg recv'd in month        | jan, january, 1
-           | m.dom     | Msg recv'd on day-of-month | 1, 31
-           | m.dow     | Msg recv'd on day-of-week  | mon, monday, 1
-           | m.hour    | Msg recv'd on hour         | 14
-           | m.minute  | Msg recv'd on minute       | 34
-           | m.imo     | IMO number                 | 6159463
-           | m.type    | Ship type                  | tanker, 32
-           | m.navstat | Navigational status        | AT_ANCHOR, 1
-           | m.name    | Ship name                  | Maersk Alabama
-           | m.cs      | Radio call sign            | XP1234
-           | m.sog     | Speed over ground          | 10.0
-           | m.cog     | Course over ground         | 234
-           | m.hdg     | True heading               | 180
-           | m.draught | Current draught            | 4.6
-           | m.lat     | Latitude                   | 56.1234
-           | m.lon     | Longitude                  | 12.4321
-           | m.pos(*)  | Position                   | (56.1234, 12.4321)
- targets   | t.imo     | IMO number                 | 6159463
-           | t.type    | Ship type                  | tanker, 32
-           | t.navstat | Navigational status        | AT_ANCHOR, 1
-           | t.name    | Ship name                  | Maersk Alabama
-           | t.cs      | Radio call sign            | XP1234
-           | t.sog     | Speed over ground          | 10.0
-           | t.cog     | Course over ground         | 234
-           | t.hdg     | True heading               | 180
-           | t.draught | Current draught            | 4.6
-           | t.lat     | Latitude                   | 56.1234
-           | t.lon     | Longitude                  | 12.4321
-           | t.pos(*)  | Position                   | (56.1234, 12.4321)
+ Group       | Field     | Meaning                    | Example values
+:------------|:----------|:---------------------------|:-----------------------
+ sources     | s.id      | Source id                  |
+             | s.bs      | Source base station        |
+             | s.country | Source country             | DNK
+             | s.type    | Source type                | LIVE, SAT 
+             | s.region  | Source region              | 0
+<hr>         | <hr>      | <hr>                       | <hr>
+ messages    | m.id      | Message type               | 1, 2, 3, 5
+             | m.mmsi    | MMSI number                | 219010123
+             | m.year    | Msg recv'd in year         | 2014
+             | m.month   | Msg recv'd in month        | jan, january, 1
+             | m.dom     | Msg recv'd on day-of-month | 1, 31
+             | m.dow     | Msg recv'd on day-of-week  | mon, monday, 1
+             | m.hour    | Msg recv'd on hour         | 14
+             | m.minute  | Msg recv'd on minute       | 34
+<hr>         | <hr>      | <hr>                       | <hr>
+             | m.imo     | IMO number                 | 6159463
+             | m.type    | Ship type                  | tanker, 32
+             | m.navstat | Navigational status        | AT_ANCHOR, 1
+             | m.name    | Ship name                  | Maersk Alabama
+             | m.cs      | Radio call sign            | XP1234
+             | m.sog     | Speed over ground          | 10.0
+             | m.cog     | Course over ground         | 234
+             | m.hdg     | True heading               | 180
+             | m.draught | Current draught            | 4.6
+             | m.lat     | Latitude                   | 56.1234
+             | m.lon     | Longitude                  | 12.4321
+             | m.pos(*)  | Position                   | (56.1234, 12.4321)
+<hr>         | <hr>      | <hr>                       | <hr>
+ targets     | t.imo     | IMO number                 | 6159463
+             | t.type    | Ship type                  | tanker, 32
+             | t.navstat | Navigational status        | AT_ANCHOR, 1
+             | t.name    | Ship name                  | Maersk Alabama
+             | t.cs      | Radio call sign            | XP1234
+             | t.sog     | Speed over ground          | 10.0
+             | t.cog     | Course over ground         | 234
+             | t.hdg     | True heading               | 180
+             | t.draught | Current draught            | 4.6
+             | t.lat     | Latitude                   | 56.1234
+             | t.lon     | Longitude                  | 12.4321
+             | t.pos(*)  | Position                   | (56.1234, 12.4321)
 
 (*) pos is represents same values as (lat, lon) but is used in contexts where complete position (not just latitude or
 longitude) is used.
