@@ -456,7 +456,6 @@ The following fields can be used in filter expressions
            | s.country | Source country             | DNK
            | s.type    | Source type                | LIVE, SAT 
            | s.region  | Source region              | 0
-<hr>       | <hr>      | <hr>                       | <hr>
  messages  | m.id      | Message type               | 1, 2, 3, 5
            | m.mmsi    | MMSI number                | 219010123
            | m.year    | Msg recv'd in year         | 2014
@@ -465,7 +464,6 @@ The following fields can be used in filter expressions
            | m.dow     | Msg recv'd on day-of-week  | mon, monday, 1
            | m.hour    | Msg recv'd on hour         | 14
            | m.minute  | Msg recv'd on minute       | 34
-<hr>       | <hr>      | <hr>                       | <hr>
            | m.imo     | IMO number                 | 6159463
            | m.type    | Ship type                  | tanker, 32
            | m.navstat | Navigational status        | AT_ANCHOR, 1
@@ -478,7 +476,6 @@ The following fields can be used in filter expressions
            | m.lat     | Latitude                   | 56.1234
            | m.lon     | Longitude                  | 12.4321
            | m.pos(*)  | Position                   | (56.1234, 12.4321)
-<hr>       | <hr>      | <hr>                       | <hr>
  targets   | t.imo     | IMO number                 | 6159463
            | t.type    | Ship type                  | tanker, 32
            | t.navstat | Navigational status        | AT_ANCHOR, 1
